@@ -1,17 +1,17 @@
 
 
 
-   const array0=new Array(5);
-    for(i=0;i<array0.length;i++)                    //creates array of 5 boxes
-    {
-    const array1=document.createElement('div');
-    array1.className=("square");
-    container.appendChild(array1);
-    
-    }
-    
-    
+   const array1=new Array(15);
+   for (j=0;j<array1.length;j++)
+   {
+     const div=document.createElement('div');
+     document.body.appendChild(div);              
+     div.className="square";
 
+    
+   }
+
+   
 
     
     

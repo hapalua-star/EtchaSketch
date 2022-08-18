@@ -1,18 +1,25 @@
 
 
 
-   const array1=new Array(15);
-   for (j=0;j<array1.length;j++)
+   const array1=new Array(256);   
+   for (x=0;x<array1.length;x++)
    {
-     const div=document.createElement('div');
-     document.body.appendChild(div);              
-     div.className="square";
-
-    
+     const x=document.createElement('div');
+     x.className="square";             
+     container.appendChild(x);
    }
 
    
 
+
+
+
+
+
+
+
+
+   
     
     
 

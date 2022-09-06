@@ -1,6 +1,4 @@
 
-
-
    const array1=new Array(256);   
    for (x=0;x<array1.length;x++)
    {
@@ -12,19 +10,8 @@
    
 
 
-
-
-
-
-
-
-
-   
-    
-    
-
-const hover1=document.querySelectorAll(".square").forEach(hover1=>{      //click on each box and they
-    hover1.addEventListener("click",changeColor =>{                      // change color
+const hover1=document.querySelectorAll(".square").forEach(hover1=>{      //mouseover on each box and they
+    hover1.addEventListener("mouseover",changeColor =>{                      // change color
         hover1.style.backgroundColor="black";
     })
 })

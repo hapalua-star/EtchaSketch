@@ -26,7 +26,7 @@ function newSize()
    x=size;
    console.log(x);
    
-   array1=0;
+   document.getElementById("container").innerHTML = "";
 
 
    const array1=new Array(x**2);   //make this a variable              //need to remove current grid and 

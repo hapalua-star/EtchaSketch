@@ -19,6 +19,7 @@ const hover1=document.querySelectorAll(".square").forEach(hover1=>{      //mouse
     })
 })
                                                                          
+
 function newSize()
 {
   
@@ -26,7 +27,7 @@ function newSize()
    x=size;
    console.log(x);
    
-   document.getElementById("container").innerHTML = "";
+   document.getElementById("container").innerHTML = ""; //clears the container div
 
 
    const array1=new Array(x**2);   //make this a variable              //need to remove current grid and 
@@ -36,6 +37,17 @@ function newSize()
      x.className="square";             
      container.appendChild(x);
    }
+
+
+   const hover1=document.querySelectorAll(".square").forEach(hover1=>{      //mouseover on each box and they
+    hover1.addEventListener("mouseover",changeColor =>{                      // change color
+        hover1.style.backgroundColor="black";
+    })
+})
+
+
+
+
 
 
 }                                                                        //make 16 to 14 and then maintain

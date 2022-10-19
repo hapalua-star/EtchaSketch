@@ -1,13 +1,20 @@
 
-   let x=16;
+   let x=5;
    
    
-   const array1=new Array(x**2);   //make this a variable
-   for (x=0;x<array1.length;x++)
+   
+   for (i=0;i<x;i++)
    {
-     const x=document.createElement('div');
-     x.className="square";             
-     container.appendChild(x);
+   
+     const newDiv=document.createElement('div');
+     const newRow=container.appendChild(newDiv);
+     for(j=0;j<x;i++)
+     {
+        const newSquare=document.createElement('div');
+        newSquare.className=".square";
+        newRow.appendChild(newSquare);
+     }
+     
    }
 
    

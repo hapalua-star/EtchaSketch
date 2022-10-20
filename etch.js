@@ -7,15 +7,14 @@
    {
    
      const newDiv=document.createElement('div');
-     const newRow=container.appendChild(newDiv);
-     for(j=0;j<x;i++)
+     const newRow=container.appendChild(newDiv)    
+     for(j=0;j<x;j++)
      {
         const newSquare=document.createElement('div');
-        newSquare.className=".square";
+        newSquare.className="square";
         newRow.appendChild(newSquare);
      }
-     
-   }
+  }
 
    
 

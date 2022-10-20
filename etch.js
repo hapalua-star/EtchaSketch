@@ -14,6 +14,7 @@
         newSquare.className="square";
         newRow.appendChild(newSquare);
      }
+     hover();
   }
 
    

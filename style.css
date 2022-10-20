@@ -5,21 +5,17 @@
 }
 
 .button{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
 }
  
     
     
  #container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
-  grid-template-rows: repeat(auto-fit,minmax(1px,1fr));
+  display:flex;
+  width:100px;
+  height:100px;
   
-  width:600px;
-  max-width:600px;
-  height:600px;
-  max-height:600px;
 
 
  }
@@ -30,7 +26,6 @@
   /*grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));*/
   width: 20px;
   height:20px;
-  
   border-style: solid ;
   background-color:rgb(235, 44, 44);
   

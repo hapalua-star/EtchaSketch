@@ -1,5 +1,5 @@
 
-   let x=5;
+   let x=16;
    
    
    
@@ -48,10 +48,16 @@ function newSize()
         const newSquare=document.createElement('div');
         newSquare.className="square";
         newRow.appendChild(newSquare);
+        newSquare.style.height="40px";   //hardcode squaresize within javascript file.
+        newSquare.style.width="40px";
      }
   }
 
-  hover();
+ 
+  //n = number of thumbnails x = one side of a rect y = the other side l = length of a side of a thumbnail
+
+  //a = Sqrt(W*H/n)
+   hover();
    
 
 }                                                                        //make 16 to 14 and then maintain

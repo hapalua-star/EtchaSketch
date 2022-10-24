@@ -1,5 +1,5 @@
 
-   let x=16;
+   let x=16;  //number of squares in one row and column
    
    
    
@@ -48,8 +48,8 @@ function newSize()
         const newSquare=document.createElement('div');
         newSquare.className="square";
         newRow.appendChild(newSquare);
-        newSquare.style.height="40px";   //hardcode squaresize within javascript file.
-        newSquare.style.width="40px";
+        newSquare.style.height=x+"px";   //hardcode squaresize within javascript file.
+        newSquare.style.width=x+"px";
      }
   }
 

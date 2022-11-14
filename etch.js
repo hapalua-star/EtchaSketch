@@ -34,7 +34,7 @@ function newSize()
   let size=prompt("Please enter size of grid you want(under 100)");
    x=size;
    console.log(x);
-   x=430/x;
+   x=320/(x);
    console.log(x);
    
    document.getElementById("container").innerHTML = ""; //clears the container div
@@ -43,6 +43,7 @@ function newSize()
    for (i=0;i<x;i++)
    {
      
+     let squareSize = document.getElementById('container').clientWidth / x;
      const newDiv=document.createElement('div');
      const newRow=container.appendChild(newDiv)    
      for(j=0;j<x;j++)
@@ -51,15 +52,23 @@ function newSize()
         newSquare.className="square";
         newRow.appendChild(newSquare);
         
-        newSquare.style.height=x+"px";   //hardcode squaresize within javascript file.
-        newSquare.style.width=x+"px";
+        newSquare.style.height=squareSize+"px";   //hardcode squaresize within javascript file.
+        newSquare.style.width=squareSize+"px";
      }
   }
 
- 
-  //n = number of thumbnails x = one side of a rect y = the other side l = length of a side of a thumbnail
+  
+ /* let squareSize = document.getElementById('grid').clientWidth / size;
+  //Creating the square and defining his size
+  for(let i=1 ; i<=size*size;i++){ 
+      let square = document.createElement('div')
+      grid.appendChild(square);
+      square.classList.add('square-grid');
+      square.style.width = squareSize + "px";
+      square.style.height = squareSize + "px"; */          
+  
 
-  //a = Sqrt(W*H/n)
+
    hover();
    
 

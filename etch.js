@@ -34,7 +34,11 @@ function newSize()
   let size=prompt("Please enter size of grid you want(under 100)");
    x=size;
    console.log(x);
-   x=320/(x);
+
+
+   x=256/(x);
+
+
    console.log(x);
    
    document.getElementById("container").innerHTML = ""; //clears the container div
@@ -52,6 +56,8 @@ function newSize()
         newSquare.className="square";
         newRow.appendChild(newSquare);
         
+        newSquare.classList.add("square-grid");
+
         newSquare.style.height=squareSize+"px";   //hardcode squaresize within javascript file.
         newSquare.style.width=squareSize+"px";
      }

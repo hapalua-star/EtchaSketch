@@ -14,20 +14,21 @@
  
     
     
- #container{
+ #board{
   
-  display:flex;
-  width:100px;
-  height:100px;
+  display:grid;
+  width:500px;
+  height:500px;
+  border: 1px solid black;
   
 
  }
 
 
 
- .square{
+ /*.square{
   /*grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));*/
-  width:20px;
+  /*width:20px;
   height:20px;
   border-style: solid ;
   background-color:rgb(235, 44, 44);

@@ -1,85 +1,63 @@
 
-   let x=16;  //number of squares in one row and column
+   document.addEventListener(`DOMContentLoaded`,function(){
    
-   
-   
-   for (i=0;i<x;i++)
+   createBoard(16);  
+
+   });
+  
+  function createBoard(size)
+  {
+   console.log("hello world");
+   let grid=document.getElementById("board");
+   grid.style.gridTemplateColumns= `repeat(${size},1fr)`;
+   grid.style.gridTemplateRows= `repeat(${size},1fr)`;
+  
+  
+  
+   let numDivs=size*size;
+  
+  
+   for (i=0;i<numDivs;i++)
    {
    
-     const newDiv=document.createElement('div');
-     const newRow=container.appendChild(newDiv)    
-     for(j=0;j<x;j++)
-     {
-        const newSquare=document.createElement('div');
-        newSquare.className="square";
-        newRow.appendChild(newSquare);
-     }
-     hover();
-  }
+     let newDiv=document.createElement('div');
+     grid.insertAdjacentElement("beforeend",newDiv);
+     newDiv.addEventListener("mouseover", function(){
+      newDiv.style.backgroundColor="black";
+     })
+
+     
+   }
+   }
+   
+                                                        
+
+
+
 
    
-function hover()
-{
 
-const hover1=document.querySelectorAll(".square").forEach(hover1=>{      //mouseover on each box and they
-    hover1.addEventListener("mouseover",changeColor =>{                      // change color
-        hover1.style.backgroundColor="black";
-    })
-})
-}                                                                        
+
+
 
 function newSize()
 {
   
   let size=prompt("Please enter size of grid you want(under 100)");
-   x=size;
-   console.log(x);
-
-
-   x=256/(x);
-
-
-   console.log(x);
    
-   document.getElementById("container").innerHTML = ""; //clears the container div
-
+  
    
-   for (i=0;i<x;i++)
-   {
+   document.getElementById("board").innerHTML=" ";
+  
+
+   createBoard(size);
+   
+   
+   
+   
+}
      
-     let squareSize = document.getElementById('container').clientWidth / x;
-     const newDiv=document.createElement('div');
-     const newRow=container.appendChild(newDiv)    
-     for(j=0;j<x;j++)
-     {
-        const newSquare=document.createElement('div');
-        newSquare.className="square";
-        newRow.appendChild(newSquare);
-        
-        newSquare.classList.add("square-grid");
-
-        newSquare.style.height=squareSize+"px";   //hardcode squaresize within javascript file.
-        newSquare.style.width=squareSize+"px";
-     }
-  }
-
   
- /* let squareSize = document.getElementById('grid').clientWidth / size;
-  //Creating the square and defining his size
-  for(let i=1 ; i<=size*size;i++){ 
-      let square = document.createElement('div')
-      grid.appendChild(square);
-      square.classList.add('square-grid');
-      square.style.width = squareSize + "px";
-      square.style.height = squareSize + "px"; */          
   
 
-
-   hover();
-   
-
-}                                                                        //make 16 to 14 and then maintain
-                                                                        //the same area of squares in the
-                                                                        //grid.
-   
-  
+                                                                      
